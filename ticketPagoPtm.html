@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RECIBO DE PAGO</title>
-    <link rel="icon" href="https://github.com/rimedhn/dkapolis/blob/main/Logo%20Inversiones%20Dkapolis.jpeg?raw=true" type="image/x-icon">
+    <link rel="icon" href="https://github.com/rimedhn/dkapolis/blob/main/Logo%20corto%20Inversiones%20Dkapolis.jpeg?raw=true" type="image/x-icon">
     <style>
       #thermal-pos {
         box-shadow: 0 0 0mm #eee;
@@ -139,32 +139,14 @@
   <body id="all">
     <div id="thermal-pos">
       <div class="label">
-        <img src="https://github.com/rimedhn/dkapolis/blob/main/Logo%20Inversiones%20Dkapolis.jpeg?raw=true" alt="Mi imagen" class="mi-imagen" /><br />
+        <img src="https://github.com/rimedhn/dkapolis/blob/main/Logo%20corto%20Inversiones%20Dkapolis.jpeg?raw=true" alt="Mi imagen" class="mi-imagen" /><br />
         <span id="empresa"></span><br />
-        <span></span>
-        <span id="razon"></span>
-        <div class="label">
-          <span>RTN: <span id="rtn"></span></span>
-          <br />
-        </div>
-        <div class="label">
-          <span>Direccion: <span id="direccion"></span></span>
-          <br />
-        </div>
-        <div class="label">
-          <span>Telefono: <span id="telefono"></span></span>
-          <br />
-        </div>
-        <div class="label">
-          <span id="email"></span>
-          <br />
-        </div>
       </div>
 
       <div align="center">--------------------------------------------------------</div>
-      <div align="center">RECIBO</div>
+      <div align="center">RECIBO DE PAGO</div>
       <div align="center">--------------------------------------------------------</div>
-      <span> CLIENTE:          <span id="cliente"></span></span><br />
+      <span> CLIENTE:        <span id="cliente"></span></span><br />
       <table>
         <tr>
           <td class="informasi" style="width: 50%;">IDENTIDAD:</td>
@@ -200,19 +182,11 @@
           <td class="informasi" style="width: 50%;">MONTO</td>
         </tr>
         <tr>
-          <td class="informasi" style="width: 50%;">INTERÉS:</td>
-          <td class="informasi" style="width: 50%;" id="interes"></td>
-        </tr>
-        <tr>
           <td class="informasi" style="width: 50%;">MORA:</td>
           <td class="informasi" style="width: 50%;" id="recargo"></td>
         </tr>
         <tr>
-          <td class="informasi" style="width: 50%;">CAPITAL:</td>
-          <td class="informasi" style="width: 50%;" id="capital"></td>
-        </tr>
-        <tr>
-          <td class="informasi" style="width: 50%;">TOTAL:</td>
+          <td class="informasi" style="width: 50%;">TOTAL PAGO:</td>
           <td class="informasi" style="width: 50%;" id="total"></td>
         </tr>
       </table>
@@ -227,16 +201,12 @@
           <td class="informasi" style="width: 50%;" id="saldoAnterior"></td>
         </tr>
         <tr>
-          <td class="informasi" style="width: 50%;">PAGO:</td>
+          <td class="informasi" style="width: 50%;">ABONO:</td>
           <td class="informasi" style="width: 50%;"  id="pago"></td>
         </tr>
         <tr>
           <td class="informasi" style="width: 50%;">SALDO ACTUAL:</td>
           <td class="informasi" style="width: 50%;"  id="saldo"></td>
-        </tr>
-        <tr>
-          <td class="informasi" style="width: 50%;"></td>
-          <td class="informasi" style="width: 50%;" ><span></span></td>
         </tr>
       </table>
       <div align="center">--------------------------------------------------------</div>
@@ -272,20 +242,13 @@
 
       // Populate the receipt with data from URL parameters
       setTextContent("empresa", getUrlParameter("empresa"));
-      setTextContent("razon", getUrlParameter("razon"));
-      setTextContent("rtn", getUrlParameter("rtn"));
-      setTextContent("direccion", getUrlParameter("direccion"));
-      setTextContent("email", getUrlParameter("email"));
-      setTextContent("telefono", getUrlParameter("telefono"));
       setTextContent("fecha", getUrlParameter("fecha"));
       setTextContent("prestamo", getUrlParameter("prestamo"));
       setTextContent("cliente", getUrlParameter("cliente"));
       setTextContent("identidad", getUrlParameter("identidad"));
       setTextContent("cuota", getUrlParameter("cuota"));
       setTextContent("medioDePago", getUrlParameter("medioDePago"));
-      setTextContent("interes", getUrlParameter("interes"));
       setTextContent("recargo", getUrlParameter("recargo"));
-      setTextContent("capital", getUrlParameter("capital"));
       setTextContent("total", getUrlParameter("total"));
       setTextContent("saldoAnterior", getUrlParameter("saldoAnterior"));
       setTextContent("pago", getUrlParameter("pago"));
