@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TICKET PRESTAMO</title>
-    <link rel="icon" href="https://github.com/rimedhn/dkapolis/blob/main/Logo%20Inversiones%20Dkapolis.jpeg?raw=true" type="image/x-icon">
+    <link rel="icon" href="https://github.com/rimedhn/dkapolis/blob/main/Logo%20corto%20Inversiones%20Dkapolis.jpeg?raw=true" type="image/x-icon">
     <style>
       #thermal-pos {
         box-shadow: 0 0 0mm #eee;
@@ -139,26 +139,9 @@
   <body id="all">
     <div id="thermal-pos">
       <div class="label">
-        <img src="https://github.com/rimedhn/dkapolis/blob/main/Logo%20Inversiones%20Dkapolis.jpeg?raw=true" alt="Mi imagen" class="mi-imagen" /><br />
+        <img src="https://github.com/rimedhn/dkapolis/blob/main/Logo%20corto%20Inversiones%20Dkapolis.jpeg?raw=true" alt="Mi imagen" class="mi-imagen" /><br />
         <span id="empresa"></span><br />
         <span>CONTRATO DE PRESTAMO PERSONAL</span>
-        <span id="razon"></span>
-        <div class="label">
-          <span>RTN: <span id="rtn"></span></span>
-          <br />
-        </div>
-        <div class="label">
-          <span>Direccion: <span id="direccion"></span></span>
-          <br />
-        </div>
-        <div class="label">
-          <span>Telefono: <span id="telefono"></span></span>
-          <br />
-        </div>
-        <div class="label">
-          <span id="email"></span>
-          <br />
-        </div>
       </div>
 
       <div align="center">--------------------------------------------------------</div>
@@ -198,10 +181,6 @@
         <tr>
           <td class="informasi" style="width: 50%;">PAGOS:</td>
           <td class="informasi" style="width: 50%;" id="pagos"></td>
-        </tr>
-        <tr>
-          <td class="informasi" style="width: 50%;">TASA:</td>
-          <td class="informasi" style="width: 50%;" id="tasa"></td>
         </tr>
         <tr>
           <td class="informasi" style="width: 50%;">FRECUENCIA:</td>
@@ -288,11 +267,6 @@
 
       // Populate the receipt with data from URL parameters
       setTextContent("empresa", getUrlParameter("empresa"));
-      setTextContent("razon", getUrlParameter("razon"));
-      setTextContent("rtn", getUrlParameter("rtn"));
-      setTextContent("direccion", getUrlParameter("direccion"));
-      setTextContent("telefono", getUrlParameter("telefono"));
-      setTextContent("email", getUrlParameter("email"));
       setTextContent("prestamo", getUrlParameter("prestamo"));
       setTextContent("cliente", getUrlParameter("cliente"));
       setTextContent("fechaInicial", getUrlParameter("fechaInicial"));
@@ -301,7 +275,6 @@
       setTextContent("identidad", getUrlParameter("identidad"));
       setTextContent("capital", getUrlParameter("capital"));
       setTextContent("pagos", getUrlParameter("pagos"));
-      setTextContent("tasa", getUrlParameter("tasa"));
       setTextContent("frecuencia", getUrlParameter("frecuencia"));
       setTextContent("cuota", getUrlParameter("cuota"));
       setTextContent("interes", getUrlParameter("interes"));
